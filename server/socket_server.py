@@ -42,8 +42,8 @@ class TCPServer:
         self.close_request(request)
 
     # 多线程处理请求
-    def process_request_multithread(self, equest, client_address):
-        t = threading.Thread(target=self.process_request, args=(equest, client_address))
+    def process_request_multithread(self, request, client_address):
+        t = threading.Thread(target=self.process_request, args=(request, client_address))
         t.start()
 
     # 关闭请求
