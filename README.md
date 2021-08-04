@@ -1,2 +1,1 @@
-# simple_http_server
-study demo
+a simple http server written by python, for study only.
